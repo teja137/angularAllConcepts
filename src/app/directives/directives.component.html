@@ -41,6 +41,20 @@
                 <li>{{x.name}}, Age: {{x.age}} Job: {{x.job}} </li>
             </ul>
         </div>
+        <h4>*ngSwitch</h4>
+        <div [ngSwitch]="number">
+            <h1>Enter any Number from 0 to 5 :-</h1>
+         <input type="text" [(ngModel)]="number">
+         <div *ngSwitchCase="0">Zero</div>
+         <div *ngSwitchCase="1">One</div>
+         <div *ngSwitchCase="2">Two</div>
+         <div *ngSwitchCase="3">Three</div>
+         <div *ngSwitchCase="4">Four</div>
+         <div *ngSwitchCase="5">Five</div>
+         <div *ngSwitchDefault="">Hey enter Number :p</div>
+        </div > <br>
+        <h1>Attribute Directive</h1>
+        
     </h2>
 </div>
 </div>

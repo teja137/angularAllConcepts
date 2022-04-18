@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesComponent implements OnInit {
 yes = true;
 no = false;
+number=null;
   constructor() { }
 
   ngOnInit(): void {
