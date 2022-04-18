@@ -1,0 +1,20 @@
+<div class="img">
+    <h1>Parent to Child Component Interaction</h1>
+<h4>It is the interaction between components, as one component (parent) as main</h4>
+<br>
+<h4>At first take an input take tag, use [(ngMode)] equal to "name" in template input field
+    <br>
+    then code app selector of the child component in the template
+    <br>
+    in the selector use property binding with "any name" to the ngModel "name"
+    <br>
+    declare the ngModel "name" is class
+</h4>
+<h1>Parent</h1>
+<h3>Enter text to view it in child</h3>
+<input type="text" [(ngModel)]="text1">
+<br>
+<h1>{{text2}}</h1>
+<app-child [text]="text1" (text2)="txt1($event)"></app-child>
+
+</div>

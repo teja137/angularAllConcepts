@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { DirectiveDirective } from './directive.directive';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { BackGroundComponent } from './back-ground/back-ground.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { BackGroundComponent } from './back-ground/back-ground.component';
     HomeComponent,
     DirectiveDirective,
     DataBindingComponent,
-    BackGroundComponent
+    BackGroundComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
