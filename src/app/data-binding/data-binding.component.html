@@ -1,0 +1,50 @@
+<div class="back">
+    <h1>Data Bindings</h1>
+    <h4>Data binding is the communication between class and template in components
+        <br>
+        We have 4 types of Bindings
+        <br>
+        <ul>
+            <li>Interpolation</li>
+            <li>Property Binding</li>
+            <li>Event Binding</li>
+            <li>Two Wat Data Binding</li>
+        </ul>
+    </h4>
+    <h1>Interpolation</h1>
+    <h4>Interpolation is the communication between class to template, we also can mathematical operations like add, sub, etc in template easily
+        <br>
+        It is annotated with two flower braces
+    </h4>
+    <h1>An example : {{hello}}</h1>
+    <h1>An example for mathematical operations: {{3+7}}, {{3*7}}, {{3/7}}, {{3-7}}</h1>
+    <br>
+    <h1>Property Binding</h1>
+    <h4>It is the communication between class to template
+        <br>
+        it is annonated with square breaces [ ]
+        <br>
+        It is same like Interpolation but it also takes properites of an element from class to templete.
+    </h4>
+    <h1>Example:</h1>
+    <img [src]="image" alt="">
+    <h1>Event Binding</h1>
+    <h4>It is the communication between template to class
+        <br>
+        It is annonated with round braces ()
+    </h4>
+    <h1>click me for the alert <button (click)="click()">Click</button></h1>
+    <br>
+    <h1>Two Way Data Binding</h1>
+    <h4>This is really a cool concept, its a mixture of property binding and event binding
+        <br>
+        Its also called banana in th box, annonated with [(ngModel)]
+        <br>
+        It's the two communication both way, template to class & class to template
+        <br>
+        In order to make this work, make sure youi import formsModule in app.component. module
+    </h4>
+    <input type="text" [(ngModel)]="reply">
+    <br>
+    <h1>Here the wriiten text you write:{{reply}}</h1>
+</div>

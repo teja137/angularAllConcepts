@@ -9,6 +9,7 @@ export class DirectivesComponent implements OnInit {
 yes = true;
 no = false;
 number=null;
+class:any;
   constructor() { }
 
   ngOnInit(): void {

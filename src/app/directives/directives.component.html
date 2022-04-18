@@ -54,7 +54,22 @@
          <div *ngSwitchDefault="">Hey enter Number :p</div>
         </div > <br>
         <h1>Attribute Directive</h1>
-        
+        <h4>ngClass</h4>
+        <h1 [ngClass]="'class'">Hello there!</h1>
+        <h4>ngStyle</h4>
+        <h1 [ngStyle]="{'color':'blue'}">Hahaha my color is blue</h1>
+        <h1 [ngStyle]="{'background-color':'yellow'}">Hahaha my background color is yellow</h1>
+        <br>
+        <h1>Custom Directives</h1>
+        <h4>In order to make custom directives we have use this command in terminal, ng g d "name of the directive"
+            <br>
+            and then in the custom directive give an instance, (private: ele: ElemenetRef) in constructor
+            <br>
+            then use the native element, (this.ele.nativeElement.style.color='hotpink')
+            <br>
+            in order to activate this custom directive, use the selector of the directive in you elements
+        </h4>
+        <h1 appDirective>I'm custom directive made with hotpink</h1>
     </h2>
 </div>
 </div>
