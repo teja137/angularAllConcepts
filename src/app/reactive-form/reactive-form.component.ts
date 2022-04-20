@@ -9,9 +9,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ReactiveFormComponent implements OnInit {
   log: FormGroup;
   show;
-  submitted=false;
+  submitted = false;
   lo: FormGroup;
-  
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -20,23 +20,31 @@ export class ReactiveFormComponent implements OnInit {
       pass: ['']
     });
     this.lo = this.fb.group({
-      email: ['', [Validators.required,Validators.email]],
+      email: ['', [Validators.required, Validators.email]],
       p: ['', [Validators.required]]
     })
   }
   //getter method for lo form
+  //email and p from lo form can be accessed through bhav method
   get bhav() {
     return this.lo.controls;
   }
 
   onSubmit() {
     this.submitted = true;
-    if(this.lo.invalid){
+    if (this.lo.invalid) {
       return;
     }
-    else{
-      console.log(this.lo.value)
+    else {
+      localStorage.setItem('anyName', JSON.stringify(this.lo.value))
+      //Storing the lo form values in local storage with "anyName"
     }
+  }
+  formValue = JSON.parse(localStorage.getItem('anyName')); //to get the stored object from local storage
+  
+  //on clicking load data button, onload method is called and stored data is displayed in console
+  onLoad(){
+    console.log(this.formValue);
   }
 
   login() {
