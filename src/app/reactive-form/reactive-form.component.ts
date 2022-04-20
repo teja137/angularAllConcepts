@@ -16,8 +16,8 @@ export class ReactiveFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.log = this.fb.group({
-      name: ['', Validators.required],
-      pass: ['', Validators.required]
+      name: [''],
+      pass: ['']
     });
     this.lo = this.fb.group({
       email: ['', [Validators.required,Validators.email]],

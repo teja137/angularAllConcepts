@@ -29,6 +29,7 @@
         <h1>Hi bhavan, How are you!</h1>
         <h1>Hello,I'm bhavana, not bhavan!!</h1>
         <input type="text" formControlName="email" placeholder="Email" name="n" [ngClass]="{'is-invalid': submitted && bhav['email'].errors}">
+    <pre>{{show.value|json}}</pre>
         <div *ngIf="submitted && bhav['email'].errors" class="invalid-feedback">
             <div *ngIf="bhav['email'].errors.required">
                   Email is Required
