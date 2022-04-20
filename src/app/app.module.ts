@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ObservablesComponent } from './observables/observables.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { PipesPipe } from './pipes.pipe';
+import { GuardsComponent } from './guards/guards.component';
 
 
 
@@ -46,7 +47,8 @@ import { PipesPipe } from './pipes.pipe';
     HttpClientComponent,
     ObservablesComponent,
     PipesComponent,
-    PipesPipe
+    PipesPipe,
+    GuardsComponent
   ],
   imports: [
     BrowserModule,

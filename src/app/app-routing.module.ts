@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BackGroundComponent } from './back-ground/back-ground.component';
 import { ContentChildComponent } from './content-child/content-child.component';
 import { ContentParentComponent } from './content-parent/content-parent.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { GuardsComponent } from './guards/guards.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path:'http', component: HttpClientComponent},
   {path:'obs', component: ObservablesComponent},
   {path:'pipes', component: PipesComponent},
+  {path:'guards', component: GuardsComponent},
 
 
 
