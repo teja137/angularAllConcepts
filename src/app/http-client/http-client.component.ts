@@ -36,5 +36,11 @@ data;
     })
   }
 
+  delete(){
+    this.api.delete(this.login.value.id).subscribe((res)=>{
+      this.get()
+    })
+  }
+
 
 }
