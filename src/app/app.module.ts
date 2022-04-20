@@ -21,6 +21,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObservablesComponent } from './observables/observables.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { PipesPipe } from './pipes.pipe';
 
 
 
@@ -42,7 +44,9 @@ import { ObservablesComponent } from './observables/observables.component';
     TemplateFormComponent,
     ReactiveFormComponent,
     HttpClientComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    PipesComponent,
+    PipesPipe
   ],
   imports: [
     BrowserModule,
