@@ -2,7 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
+To run the project, pull the file from gitHub and open the file in vscode and run npm install in your terminal.
+
+Version:1
 ![Screenshot (318)](https://user-images.githubusercontent.com/94112233/163773397-56572096-7429-4e40-b5fe-cd162bc5b354.png)
+
+Version:2
+![Screenshot from 2022-04-19 00-42-10](https://user-images.githubusercontent.com/94112233/163863361-652d89f6-28a3-48fb-ae9e-53109d597c40.png)
 
 
 
