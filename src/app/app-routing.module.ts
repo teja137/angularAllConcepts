@@ -4,6 +4,7 @@ import { BackGroundComponent } from './back-ground/back-ground.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { HomeComponent } from './home/home.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'binding', component: DataBindingComponent},
   {path:'bg', component: BackGroundComponent},
   {path:'parentChild', component:ParentComponent},
+  {path:'lch', component:LifeCycleHooksComponent},
 
 
 

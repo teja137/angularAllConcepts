@@ -11,6 +11,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { BackGroundComponent } from './back-ground/back-ground.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ChildComponent } from './child/child.component';
     DataBindingComponent,
     BackGroundComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    LifeCycleHooksComponent
   ],
   imports: [
     BrowserModule,
