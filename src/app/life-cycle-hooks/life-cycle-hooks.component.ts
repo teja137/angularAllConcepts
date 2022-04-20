@@ -6,58 +6,35 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   styleUrls: ['./life-cycle-hooks.component.css']
 })
 export class LifeCycleHooksComponent implements OnChanges,OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy{
-
-  constructor() {
-    setTimeout(() => {
-      console.log("hi, I'm constructor");
-      }, 1000);    
-   }
-
+  constructor() { 
+    console.log("Constructor"); 
+  }
   ngOnChanges(changes: SimpleChanges): void {
-setTimeout(() => {
-  console.log("hi, I'm ngOnChanges");
-  }, 2000);  }
-
+    console.log("OnChanges");
+  }
   ngOnInit(): void {
-    setTimeout(() => {
-      console.log("hi, I'm ngOnInit");
-    }, 3000);
+    console.log("OnInIt");
   }
-
   ngDoCheck(): void {
-    setTimeout(() => {
-      console.log("hi,I'm ngDoCheck");
-    }, 4000);
+    console.log("DoCheck");
   }
-
   ngAfterContentInit(): void {
-    setTimeout(() => {
-      console.log("hi,I'm ngAfterContentInit");
-    }, 5000);
+    console.log("AfterContentInIt");
   }
- 
   ngAfterContentChecked(): void {
-    setTimeout(() => {
-      console.log("hi, I'm ngAfterContentChecked");
-    }, 6000);
+    console.log("AfterContentChecked");
   }
-
   ngAfterViewInit(): void {
-    setTimeout(() => {
-      console.log("hi,I'm ngAfterViewInit");  
-    }, 7000);
+    console.log("AfterViewInIt");
   }
   ngAfterViewChecked(): void {
-    setTimeout(() => {
-      console.log("hi, I'm ngAfterViewChecked");
-    }, 8000);
+    console.log("AfterViewChecked");
   }
-  ngOnDestroy() {
-    setTimeout(() => {
-      console.log("destroy");
-    }, 9000);
-    
+  ngOnDestroy(): void {
+    console.log("OnDestory");
   }
-
+  
+  
+  
 
 }
