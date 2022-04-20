@@ -9,18 +9,24 @@ import { HttpService } from '../http.service';
 })
 export class HttpClientComponent implements OnInit {
 login;
+data;
   constructor(private api: HttpService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.login=this.fb.group({
       name:[''],
-      pass:['']
+      pin:['']
     })
+    this.get()
   }
-  log(){
+  post(){
     this.api.post(this.login.value).subscribe((res)=>{
-      console.log(res);
-      
+      this.get()
+    });
+  }
+  get(){
+    this.api.get().subscribe((res)=>{
+      this.data=res
     })
   }
 }

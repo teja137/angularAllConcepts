@@ -19,10 +19,10 @@
     </h4>
     <br><br><br>
 
-    <form [formGroup]="login" (ngSubmit)="log()">
+    <form [formGroup]="login" (ngSubmit)="post()">
         <input type="text" formControlName="name" name="name" placeholder="name">
         <br>
-        <input type="password" formControlName="pass" name="pass" placeholder="password">
+        <input type="password" formControlName="pin" name="pin" placeholder="password">
         <br>
         <button>Login</button>
     </form>
@@ -34,7 +34,7 @@
 
 
 
-    <table>
+    <table border="2" style="text-align: center;">
         <thead>
             <tr>
                 <th>ID</th>
@@ -42,12 +42,13 @@
                 <th>PIN</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody  *ngFor="let x of data">
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{x.id}}</td>
+                <td>{{x.name}}</td>
+                <td>{{x.pin}}</td>
             </tr>
         </tbody>
     </table>
+    <!-- {{data|json}} -->
 </div>
