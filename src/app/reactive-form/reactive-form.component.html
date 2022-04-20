@@ -11,7 +11,7 @@
         <li>Changing validation dynamically</li>
         <li>Dynamically adding form fields </li>
         <br>
-        We have to import reactiveFormsMidule in app.module.ts
+        We have to import reactiveForms Module in app.module.ts
     </h4>
     <h1>Basic Reactive From</h1>
     <br>
@@ -27,11 +27,27 @@
     <br>
     <form [formGroup]="lo" (ngSubmit)="l()">
         <h1>Hi bhavan, How are you!</h1>
-        <input type="text" formControlName="n" placeholder="name" name="n">
+        <h1>Hello,I'm bhavana, not bhavan!!</h1>
+        <input type="text" formControlName="email" placeholder="Email" name="n" [ngClass]="{'is-invalid': submitted && bhav['email'].errors}">
+        <div *ngIf="submitted && bhav['email'].errors" class="invalid-feedback">
+            <div *ngIf="bhav['email'].errors.required">
+                  Email is Required
+            </div>
+            <div *ngIf="bhav['email'].errors.email">
+                It should be a valid email address
+          </div>
+        </div>
+        <!-- The form field is invalid when the validations are not satisfied(i.e.,considered as errors),  So on submit, we r displaying the error messages -->
+        <!-- Here class="invalid-feedback" gives us the error message in red -->
         <br>
-        <input type="password" formControlName="p" placeholder="password" name="p">
+        <input type="password" formControlName="p" placeholder="password" name="p" [ngClass]="{'is-invalid': submitted && bhav['p'].errors}">
+        <div *ngIf="submitted && bhav['p'].errors" class="invalid-feedback">
+            <div *ngIf="bhav['p'].errors.required">
+                  Password is Required
+            </div>
+        </div>
         <br>
-        <button>Login</button>
+        <button (click)="onSubmit()">Login</button>
     </form>
     <br>
     <h1>Click to see tha data below and scroll:</h1>
