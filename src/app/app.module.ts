@@ -19,6 +19,9 @@ import { RoutingComponent } from './routing/routing.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { HttpClientComponent } from './http-client/http-client.component';
+import { HttpClient } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import { HttpClientComponent } from './http-client/http-client.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]

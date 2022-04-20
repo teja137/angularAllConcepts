@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-http-client',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HttpClientComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api: HttpService) { }
 
   ngOnInit(): void {
   }
