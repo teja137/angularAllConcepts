@@ -1,0 +1,29 @@
+
+<div class="bg">
+    <br><br><br>
+    <h1>Routing</h1>
+    <h4>In single page applications where there is a need for new content, the whole page never changes but the only the particular page changes.
+        <br>
+        This is called routing. You move from one component to another without going to an another page
+        <br>
+        syntax is in vs code:
+        <!-- In app.router.moudle in const: routes: Routes = [
+            {path:'home', component: HomeComponent}
+        ] -->
+        <br>
+        in template give router-outlet in the end and give an anchor tag with router link to activate the route
+        <br>example: <br>
+        <a routerLink="home">Home</a>
+        <router-outlet></router-outlet>
+            <br>
+            there is also another way to navigate, in ts file
+            <br>
+            go to your ts file, import Router by typing in constructor (private route: Router)
+            <br>
+            take button and give a click method
+            <br>
+            and in fucntion give this.route.navigate(['bg'])
+            <br>
+            <button (click)="go()">CLICK</button>
+    </h4>
+</div>
