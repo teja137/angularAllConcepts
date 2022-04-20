@@ -1,5 +1,28 @@
 <div>
     <br><br><br>
     <h1>Pipes</h1>
-    <h4></h4>
+    <h4>Pipes are used to modify the data on the dom.
+        <br>
+        the real data has no effect, it's just like a filter
+        <br>
+        pipes are indicated by |
+        <br>
+        few typle like, Data, UpperCase, LowerCase, Currency, so on....
+        <br>
+        there are custom pipes, to share it to multiple components
+        <br>
+        to generate custom pipes, ng g p "pipe name"
+    </h4>
+    <br>
+    <h1>To Lower Case: {{name| lowercase}}</h1>
+    <h1>To Upper case: {{name|uppercase}}</h1>
+    <h1>Present Date: {{date|date}} <br>
+        date/Month/year: {{date|date:'d/M/y'}} <br>
+        Short time: {{date|date:'shortTime'}}</h1>
+    <h1>Dollar currency: {{73|currency:"USD"}}</h1>
+    <h1>Indian Currency: {{21|currency:"INR"}}</h1>
+    <h2>Percentage of 1: {{1|percent}}</h2>
+    <h1>Object view using json:{{text|json}}</h1>
+    <h1>Slice: {{months|slice:2:6}}</h1>
+    <h1>Square Root of 137: {{137|pipes}}</h1>
 </div>
