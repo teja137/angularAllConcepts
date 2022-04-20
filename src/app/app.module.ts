@@ -18,6 +18,7 @@ import { ServicesComponent } from './services/services.component';
 import { RoutingComponent } from './routing/routing.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { HttpClientComponent } from './http-client/http-client.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     ServicesComponent,
     RoutingComponent,
     TemplateFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    HttpClientComponent
   ],
   imports: [
     BrowserModule,
