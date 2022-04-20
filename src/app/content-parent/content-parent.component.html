@@ -1,1 +1,26 @@
-<br><br><br>
+<div class="bg">
+    <br><br><br>
+<h1>Content Projection (parent)</h1>
+<h4>It is also same like component interaction.
+    <br>
+    but there we use:
+    <li>@ViewChild()</li>
+    <li>@ViewChildren()</li>
+    <li>@ContentChild()</li>
+    <li>@ContentChildren()</li>
+    <br>
+    you can see the use case of afterViewInIt, afterContentInIt
+    <br>
+    afterViewInIt takes only single uniqiue id
+    <br>
+    afterContentInIt take all unique id's
+    <br>
+    at first in parent take couple h1 tags and have unique Id's to them, put them in app-selector
+</h4>
+
+<app-content-child>
+    <h1 #x>Hello</h1>
+    <h1 #xx>I am</h1>
+    <h1 #xx>Machine</h1>
+</app-content-child>
+</div>

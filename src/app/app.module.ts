@@ -14,6 +14,7 @@ import { ChildComponent } from './child/child.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 import { ContentParentComponent } from './content-parent/content-parent.component';
 import { ContentChildComponent } from './content-child/content-child.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ContentChildComponent } from './content-child/content-child.component';
     ChildComponent,
     LifeCycleHooksComponent,
     ContentParentComponent,
-    ContentChildComponent
+    ContentChildComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

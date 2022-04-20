@@ -1,1 +1,17 @@
-<p>content-child works!</p>
+<div class="bg">
+    <br><br><br>
+<h1>Content Projection (child)</h1>
+<h4>use ng - content to control other component i.e, parent component here
+    <br>
+    <li>@ViewChild() is to select the same component single unique id</li>
+    <li>@ViewChildren() is to select the same component multiple same unique id's</li>
+    <li>@ContentChild() is to select the other component single unique id</li>
+    <li>@ContentChildren() is to select the same component multiple unique id's</li>
+    <br>
+    <h4>*HINT* double click nav bar (content projection (child)) twice to see cahnges manuelly</h4>
+</h4>
+<h1 #z>Hello</h1>
+<h1 #zz>I am</h1>
+<h1 #zz>Human</h1>
+<ng-content></ng-content>
+</div>
