@@ -1,4 +1,38 @@
 <div class="bg">
     <br><br><br>
     <h1>Reactive Form</h1>
+    <h4>Reactive Forms are used to create dynamic forms. 
+        <br>
+        They are really powerful and flexible.
+        <br>
+        Reactive forms: Features-
+        <br>
+        <li>Using custom validators</li>
+        <li>Changing validation dynamically</li>
+        <li>Dynamically adding form fields </li>
+        <br>
+        We have to import reactiveFormsMidule in app.module.ts
+    </h4>
+    <h1>Basic Reactive From</h1>
+    <br>
+    <form [formGroup]="log">
+        <input type="text" formControlName="name" placeholder="name" name="name"><br>
+        <input type="password" formControlName="pass" placeholder="password" name="pass"><br>
+        <button (click)="login()">Login</button>
+    </form>
+    <br>
+    <h2 style="color: grey;">Check in the consle for results</h2>
+    <br>
+    <h1>Reactive Form with Validations</h1>
+    <br>
+    <form [formGroup]="lo" (ngSubmit)="l()">
+        <input type="text" formControlName="n" placeholder="name" name="n">
+        <br>
+        <input type="password" formControlName="p" placeholder="password" name="p">
+        <br>
+        <button>Login</button>
+    </form>
+    <br>
+    <h1>Cick to see tha data below:</h1><br>
+    <pre>{{show.value|json}}</pre>
 </div>
