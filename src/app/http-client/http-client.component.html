@@ -19,6 +19,21 @@
     </h4>
     <br><br><br>
 
+    <form [formGroup]="login" (ngSubmit)="log()">
+        <input type="text" formControlName="name" name="name" placeholder="name">
+        <br>
+        <input type="password" formControlName="pass" name="pass" placeholder="password">
+        <br>
+        <button>Login</button>
+    </form>
+
+
+
+
+
+
+
+
     <table>
         <thead>
             <tr>
