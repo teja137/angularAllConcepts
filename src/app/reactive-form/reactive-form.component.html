@@ -38,8 +38,8 @@
                 It should be a valid email address
           </div>
         </div>
-        <!-- The form field is invalid when the validations are not satisfied(i.e.,considered as errors),  So on submit, we r displaying the error messages -->
-        <!-- Here class="invalid-feedback" gives us the error message in red -->
+         <!-- The form field is invalid when the validations are not satisfied(i.e.,considered as errors),  So on submit, we r displaying those error messages -->
+        <!-- Here class="invalid-feedback" is a default class that gives us the error message and the form field in red -->
         <br>
         <input type="password" formControlName="p" placeholder="password" name="p" [ngClass]="{'is-invalid': submitted && bhav['p'].errors}">
         <div *ngIf="submitted && bhav['p'].errors" class="invalid-feedback">
@@ -49,6 +49,7 @@
         </div>
         <br>
         <button (click)="onSubmit()">Login</button>
+        <button (click)="onLoad()">Load Data</button>
     </form>
     <br>
     <h1>Click to see tha data below and scroll:</h1>
