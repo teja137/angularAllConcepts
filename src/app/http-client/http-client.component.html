@@ -1,6 +1,6 @@
 <div>
     <br><br><br>
-    <h1>HTTO CLIENT METHODS</h1>
+    <h1>HTTP CLIENT METHODS</h1>
     <h4>It is crud operaation.
         <br>
         create, read, update, delete
@@ -15,23 +15,20 @@
         <br>
         to run it use command, --watch db.json
         <br>
-        you will the api key or .com when you run the server. It'll only work if it runs in real time
+        you will get the api key or .com when you run the server. It'll only work if it runs in real time
     </h4>
     <br><br><br>
 
     <form [formGroup]="login" (ngSubmit)="post()">
-        <input type="text" formControlName="name" name="name" placeholder="name">
+        <input type="number" formControlName="id" name="id" placeholder="number"><br>
+        <br><input type="text" formControlName="name" name="name" placeholder="name"><br>
         <br>
         <input type="password" formControlName="pin" name="pin" placeholder="password">
-        <br>
-        <button>Login</button>
+        <br><br>
+        <button>Add</button>
+        <button (click)="put()">Update</button>
+        <!-- <button (click)="delete()">Delete</button> -->
     </form>
-
-
-
-
-
-
 
 
     <table border="2" style="text-align: center;">
@@ -47,6 +44,8 @@
                 <td>{{x.id}}</td>
                 <td>{{x.name}}</td>
                 <td>{{x.pin}}</td>
+        <button (click)="delete(x.id)">Delete</button>
+
             </tr>
         </tbody>
     </table>

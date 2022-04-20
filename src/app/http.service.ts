@@ -14,4 +14,10 @@ export class HttpService {
     get(){
       return this.http.get('http://localhost:3000/posts')
     }
+    put(id,data){
+      return this.http.put('http://localhost:3000/posts/'+id,data)
+    }
+    delete(id){
+      return this.http.delete('http://localhost:3000/posts/'+id)
+    }
 }

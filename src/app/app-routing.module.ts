@@ -8,7 +8,9 @@ import { DirectivesComponent } from './directives/directives.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
+import { ObservablesComponent } from './observables/observables.component';
 import { ParentComponent } from './parent/parent.component';
+import { PipesComponent } from './pipes/pipes.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RoutingComponent } from './routing/routing.component';
 import { ServicesComponent } from './services/services.component';
@@ -29,6 +31,8 @@ const routes: Routes = [
   {path:'template', component: TemplateFormComponent},
   {path:'reactive', component: ReactiveFormComponent},
   {path:'http', component: HttpClientComponent},
+  {path:'obs', component: ObservablesComponent},
+  {path:'pipes', component: PipesComponent},
 
 
 

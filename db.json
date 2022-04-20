@@ -1,44 +1,9 @@
 {
   "posts": [
     {
-      "id": 1,
-      "name": "Prabhu Teja",
-      "pin": "&^*57f"
-    },
-    {
       "id": 2,
       "name": "Bhavana",
       "pin": "&^*37m"
-    },
-    {
-      "id": 3,
-      "name": "Ruth",
-      "pin": "&^*04gf"
-    },
-    {
-      "id": 4,
-      "name": "Meghana",
-      "pin": "&^*537l"
-    },
-    {
-      "id": 5,
-      "name": "Sheryl",
-      "pin": "&^*007b"
-    },
-    {
-      "name": "dream",
-      "pin": "dream7%$#09U",
-      "id": 6
-    },
-    {
-      "name": "ugbuijbkjubkj",
-      "pin": "##&#^%^HYf99",
-      "id": 7
-    },
-    {
-      "name": "dgbufvuv",
-      "pin": "6535fj",
-      "id": 8
     }
   ]
 }
