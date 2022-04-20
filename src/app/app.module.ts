@@ -20,6 +20,7 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ObservablesComponent } from './observables/observables.component';
 
 
 
@@ -40,7 +41,8 @@ import { HttpClientModule } from '@angular/common/http';
     RoutingComponent,
     TemplateFormComponent,
     ReactiveFormComponent,
-    HttpClientComponent
+    HttpClientComponent,
+    ObservablesComponent
   ],
   imports: [
     BrowserModule,
