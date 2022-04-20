@@ -36,10 +36,20 @@ data;
     })
   }
 
-  delete(){
-    this.api.delete(this.login.value.id).subscribe((res)=>{
+  // delete(){
+  //   this.api.delete(this.login.value.id).subscribe((res)=>{
+  //     this.get()
+  //     console.log(this.login.value.id);
+      
+  //   })
+// }
+
+
+  delete(ids:any){
+    this.api.delete(ids).subscribe((res)=>{
       this.get()
     })
+    
   }
 
 
