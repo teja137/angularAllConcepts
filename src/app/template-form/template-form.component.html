@@ -1,4 +1,27 @@
 <div class="bg">
     <br><br><br>
     <h1>Template Driven Form</h1>
+    <h4>Template-driven forms are based only on the template-directive.
+        <br>
+        template-driven forms use two-way data binding to update the data
+        <br>
+        Template driven forms are forms where we write logic, validations, controls etc, in the template part of the code (html code).
+        <br>
+        We hav to import formsModule in app.module in order for it work.
+        <br>
+        we use ngForm, ngSubmit in form tag. We use name="" and ngModel in input tags.
+    </h4>
+    <br>
+    <br>
+    <h1>Login Form</h1>
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+        <input type="text" placeholder="name" name="name" ngModel>
+        <br>
+        <input type="password" placeholder="pass" name="pass" ngModel>
+        <br>
+        <button>Login</button>
+    </form>
+    <br><br>
+    <h2>On Click View Data:</h2>
+    <pre>{{data | json }}</pre>
 </div>

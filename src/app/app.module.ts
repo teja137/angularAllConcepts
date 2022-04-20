@@ -17,6 +17,7 @@ import { ContentChildComponent } from './content-child/content-child.component';
 import { ServicesComponent } from './services/services.component';
 import { RoutingComponent } from './routing/routing.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TemplateFormComponent } from './template-form/template-form.component';
     ContentChildComponent,
     ServicesComponent,
     RoutingComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,

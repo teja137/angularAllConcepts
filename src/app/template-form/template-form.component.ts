@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./template-form.component.css']
 })
 export class TemplateFormComponent implements OnInit {
-
+  data;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  login(value){
+  this.data=value    
+  }
 }

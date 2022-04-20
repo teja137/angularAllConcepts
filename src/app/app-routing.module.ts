@@ -8,6 +8,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { HomeComponent } from './home/home.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 import { ParentComponent } from './parent/parent.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RoutingComponent } from './routing/routing.component';
 import { ServicesComponent } from './services/services.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:'routing', component: RoutingComponent},
   { path: 'lazyLoad', loadChildren: () => import('./lazy-load/lazy-load.module').then(m => m.LazyLoadModule) },
   {path:'template', component: TemplateFormComponent},
+  {path:'reactive', component: ReactiveFormComponent},
 
 
 
