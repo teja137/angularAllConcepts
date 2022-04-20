@@ -12,6 +12,8 @@ import { BackGroundComponent } from './back-ground/back-ground.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
+import { ContentParentComponent } from './content-parent/content-parent.component';
+import { ContentChildComponent } from './content-child/content-child.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.com
     BackGroundComponent,
     ParentComponent,
     ChildComponent,
-    LifeCycleHooksComponent
+    LifeCycleHooksComponent,
+    ContentParentComponent,
+    ContentChildComponent
   ],
   imports: [
     BrowserModule,
