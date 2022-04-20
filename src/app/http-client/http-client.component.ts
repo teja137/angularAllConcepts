@@ -14,6 +14,7 @@ data;
 
   ngOnInit(): void {
     this.login=this.fb.group({
+      id:[''],
       name:[''],
       pin:['']
     })
@@ -29,4 +30,11 @@ data;
       this.data=res
     })
   }
+  put(){
+    this.api.put(this.login.value.id,this.login.value).subscribe((res)=>{
+      this.get()
+    })
+  }
+
+
 }

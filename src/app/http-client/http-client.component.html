@@ -1,6 +1,6 @@
 <div>
     <br><br><br>
-    <h1>HTTO CLIENT METHODS</h1>
+    <h1>HTTP CLIENT METHODS</h1>
     <h4>It is crud operaation.
         <br>
         create, read, update, delete
@@ -20,18 +20,14 @@
     <br><br><br>
 
     <form [formGroup]="login" (ngSubmit)="post()">
+        <input type="number" formControlName="id" name="id" placeholder="number">
         <input type="text" formControlName="name" name="name" placeholder="name">
         <br>
         <input type="password" formControlName="pin" name="pin" placeholder="password">
         <br>
         <button>Login</button>
+        <button (click)="put()">Update</button>
     </form>
-
-
-
-
-
-
 
 
     <table border="2" style="text-align: center;">
