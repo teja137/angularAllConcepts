@@ -12,6 +12,6 @@ export class AuthService {
   }
 
   get isChildLoggedIn(){
-    return true
+    return false
   }
 }
