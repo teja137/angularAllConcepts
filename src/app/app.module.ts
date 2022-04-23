@@ -30,6 +30,7 @@ import { NameAdddressComponent } from './name-adddress/name-adddress.component';
 import { CanActChild } from './guards/can-act-child.guard';
 import { AddressComponent } from './address/address.component';
 import { CompanyComponent } from './company/company.component';
+import { AddPeopleComponent } from './add-people/add-people.component';
 
 
 
@@ -58,7 +59,8 @@ import { CompanyComponent } from './company/company.component';
     CanActComponent,
     NameAdddressComponent,
     AddressComponent,
-    CompanyComponent
+    CompanyComponent,
+    AddPeopleComponent
   ],
   imports: [
     BrowserModule,

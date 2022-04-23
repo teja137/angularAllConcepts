@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddPeopleComponent } from './add-people/add-people.component';
 import { AddressComponent } from './address/address.component';
 import { BackGroundComponent } from './back-ground/back-ground.component';
 import { CanActComponent } from './can-act/can-act.component';
@@ -53,6 +54,8 @@ const routes: Routes = [
     {path:'company', component: CompanyComponent}
   ]
 },
+
+  {path:'add', component: AddPeopleComponent},
 
 
 
