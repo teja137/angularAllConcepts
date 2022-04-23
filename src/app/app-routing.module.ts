@@ -45,7 +45,7 @@ const routes: Routes = [
   canActivate: [CanActGuard]
 },
   {path:'na', component: NameAdddressComponent,
-  canActivate: [CanActGuard],
+  // canActivate: [CanActGuard],
   canActivateChild: [CanActChild], 
   children: [
     // {path:'', redirectTo:'address', pathMatch: 'full'},

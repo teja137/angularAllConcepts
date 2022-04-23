@@ -21,6 +21,20 @@
 <button (click)="canAct()">Can Activate</button>
 <br>
 <h1>Can Activate Child</h1>
-<h4>ng g g adminGuard, remove everything which come default</h4><br>
-<h1><a (click)="nameAddress()">1.</a></h1>
+<h4>ng g g adminGuard, remove everything which come default
+    <br>
+    Its used to put gaurds in child routes
+    <br>example: user/admin access
+</h4>
+<h1><a class="btn btn-danger" (click)="nameAddress()">can Activate Child</a></h1>
+<br><br>
+<h1>canDeactivate</h1>
+<h4>it is called when we want to naviagte away from the existing component
+    <br>
+    ex: giving user a confirmation if he leaves the page without saving data
+    <br>
+    we can give the user a chaance to save the information before leaving the companent
+</h4>
+<br>
+<button class="btn btn-primary"></button>
 </div>
