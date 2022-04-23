@@ -15,4 +15,7 @@ export class GuardsComponent implements OnInit {
   canAct(){
     this.route.navigate(['ca'])
   }
+  nameAddress(){
+    this.route.navigate(['na'])
+  }
 }

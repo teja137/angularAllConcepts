@@ -14,7 +14,15 @@
 <h4>returns boolean value only</h4>
 <br><br>
 <h1>Can Activate</h1>
-<h4>ng g g canAct, remove everuthing and put boolen in ts of can act guard</h4>
-<h4>Give either true or false in the guard, rite now its false so when you click button it wont redirect tp can actovae page</h4>
+<h4>careate a service authService</h4>
+<h4>ng g g canAct, remove everything in ts of can act guard</h4>
+<h4>give either true or false in the guard, to redorect based on your needs</h4>
+<h4>make sure to put canActivae: [] in app.routing and also in providers in app.module.ts put guard name</h4>
 <button (click)="canAct()">Can Activate</button>
+<br>
+<h1>Can Activate Child</h1>
+<h4>ng g g adminGuard, remove everything which come default</h4>
+<a (click)="nameAddress()">1.</a><br>
+<a (click)="nameAddress()">2.</a><br>
+<a (click)="nameAddress()">3.</a><br>
 </div>

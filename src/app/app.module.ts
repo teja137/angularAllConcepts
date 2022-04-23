@@ -25,6 +25,11 @@ import { PipesComponent } from './pipes/pipes.component';
 import { PipesPipe } from './pipes.pipe';
 import { GuardsComponent } from './guards/guards.component';
 import { CanActComponent } from './can-act/can-act.component';
+import { CanActGuard } from './guards/can-act.guard';
+import { NameAdddressComponent } from './name-adddress/name-adddress.component';
+import { AdminGuard } from './guards/admin.guard';
+import { AddressComponent } from './address/address.component';
+import { CompanyComponent } from './company/company.component';
 
 
 
@@ -50,7 +55,10 @@ import { CanActComponent } from './can-act/can-act.component';
     PipesComponent,
     PipesPipe,
     GuardsComponent,
-    CanActComponent
+    CanActComponent,
+    NameAdddressComponent,
+    AddressComponent,
+    CompanyComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +67,7 @@ import { CanActComponent } from './can-act/can-act.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CanActGuard, AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
