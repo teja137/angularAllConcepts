@@ -1,6 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BackGroundComponent } from './back-ground/back-ground.component';
+import { CanActGuard } from './can-act.guard';
+import { CanActComponent } from './can-act/can-act.component';
 import { ContentChildComponent } from './content-child/content-child.component';
 import { ContentParentComponent } from './content-parent/content-parent.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -35,6 +37,7 @@ const routes: Routes = [
   {path:'obs', component: ObservablesComponent},
   {path:'pipes', component: PipesComponent},
   {path:'guards', component: GuardsComponent},
+  {path:'ca', component: CanActComponent, canActivate: [CanActGuard]},
 
 
 

@@ -24,6 +24,7 @@ import { ObservablesComponent } from './observables/observables.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { PipesPipe } from './pipes.pipe';
 import { GuardsComponent } from './guards/guards.component';
+import { CanActComponent } from './can-act/can-act.component';
 
 
 
@@ -48,7 +49,8 @@ import { GuardsComponent } from './guards/guards.component';
     ObservablesComponent,
     PipesComponent,
     PipesPipe,
-    GuardsComponent
+    GuardsComponent,
+    CanActComponent
   ],
   imports: [
     BrowserModule,
