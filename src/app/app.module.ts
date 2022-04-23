@@ -31,6 +31,7 @@ import { CanActChild } from './guards/can-act-child.guard';
 import { AddressComponent } from './address/address.component';
 import { CompanyComponent } from './company/company.component';
 import { AddPeopleComponent } from './add-people/add-people.component';
+import { CanDeacGuard } from './guards/can-deac.guard';
 
 
 
@@ -69,7 +70,7 @@ import { AddPeopleComponent } from './add-people/add-people.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [CanActGuard, CanActChild],
+  providers: [CanActGuard, CanActChild, CanDeacGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

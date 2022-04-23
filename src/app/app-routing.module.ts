@@ -11,6 +11,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CanActChild } from './guards/can-act-child.guard';
 import { CanActGuard } from './guards/can-act.guard';
+import { CanDeacGuard } from './guards/can-deac.guard';
 import { GuardsComponent } from './guards/guards.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientComponent } from './http-client/http-client.component';
@@ -55,7 +56,6 @@ const routes: Routes = [
   ]
 },
 
-  {path:'add', component: AddPeopleComponent},
 
 
 

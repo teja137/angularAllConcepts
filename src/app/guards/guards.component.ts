@@ -18,7 +18,7 @@ export class GuardsComponent implements OnInit {
   nameAddress(){
     this.route.navigate(['na'])
   }
-  canDeac(){
+  canDea(){
     this.route.navigate(['add'])
   }
 }
