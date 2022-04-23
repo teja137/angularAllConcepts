@@ -8,7 +8,7 @@ import { ContentChildComponent } from './content-child/content-child.component';
 import { ContentParentComponent } from './content-parent/content-parent.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { AdminGuard } from './guards/admin.guard';
+import { CanActChild } from './guards/can-act-child.guard';
 import { CanActGuard } from './guards/can-act.guard';
 import { GuardsComponent } from './guards/guards.component';
 import { HomeComponent } from './home/home.component';
@@ -46,7 +46,7 @@ const routes: Routes = [
 },
   {path:'na', component: NameAdddressComponent,
   canActivate: [CanActGuard],
-  canActivateChild: [AdminGuard], 
+  canActivateChild: [CanActChild], 
   children: [
     // {path:'', redirectTo:'address', pathMatch: 'full'},
     {path:'address', component: AddressComponent },

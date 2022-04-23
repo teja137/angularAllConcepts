@@ -6,10 +6,10 @@ import { AuthService } from '../auth.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AdminGuard implements CanActivateChild {
+export class CanActChild implements CanActivateChild {
   constructor(private auth:AuthService){}
   canActivateChild() {
-    if(this.auth.isChildLoggedIn){
+    if(this.auth.CanActChild){
       return true
     } else false
   }

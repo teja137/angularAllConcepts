@@ -8,10 +8,10 @@ export class AuthService {
   constructor() { }
 
   get isLoggedIn(){
-    return true;
+    return false;
   }
 
-  get isChildLoggedIn(){
+  get CanActChild(){
     return false
   }
 }

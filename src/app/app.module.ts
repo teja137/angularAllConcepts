@@ -27,7 +27,7 @@ import { GuardsComponent } from './guards/guards.component';
 import { CanActComponent } from './can-act/can-act.component';
 import { CanActGuard } from './guards/can-act.guard';
 import { NameAdddressComponent } from './name-adddress/name-adddress.component';
-import { AdminGuard } from './guards/admin.guard';
+import { CanActChild } from './guards/can-act-child.guard';
 import { AddressComponent } from './address/address.component';
 import { CompanyComponent } from './company/company.component';
 
@@ -67,7 +67,7 @@ import { CompanyComponent } from './company/company.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [CanActGuard, AdminGuard],
+  providers: [CanActGuard, CanActChild],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
