@@ -57,6 +57,8 @@ const routes: Routes = [
 },
 
 
+  {path:'add', component:AddPeopleComponent, canDeactivate: [CanDeacGuard]},
+
 
 
   {path:'**', component: HomeComponent}

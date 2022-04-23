@@ -7,7 +7,10 @@ import { AddPeopleComponent } from '../add-people/add-people.component';
   providedIn: 'root'
 })
 export class CanDeacGuard implements CanDeactivate<AddPeopleComponent> {
-  canDeactivate(){
+  canDeactivate(component:AddPeopleComponent){
+    if(component.name.dirty){
+      return window.confirm("You have some unsaved changes. Are you sure you want to navigate?")
+    }
     return true;
   }
   
